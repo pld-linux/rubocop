@@ -5,7 +5,7 @@
 Summary:	A robust Ruby code analyzer, based on the community Ruby style guide
 Name:		rubocop
 Version:	0.18.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{name}-%{version}.gem
