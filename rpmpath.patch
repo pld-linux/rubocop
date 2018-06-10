@@ -3,9 +3,9 @@
 @@ -11,7 +11,7 @@
    # directories are inspected.
    class ConfigLoader
-     DOTFILE = '.rubocop.yml'
+     DOTFILE = '.rubocop.yml'.freeze
 -    RUBOCOP_HOME = File.realpath(File.join(File.dirname(__FILE__), '..', '..'))
 +    RUBOCOP_HOME = File.realpath(File.dirname(__FILE__))
      DEFAULT_FILE = File.join(RUBOCOP_HOME, 'config', 'default.yml')
-     AUTO_GENERATED_FILE = 'rubocop-todo.yml'
+     AUTO_GENERATED_FILE = 'rubocop-todo.yml'.freeze
  
