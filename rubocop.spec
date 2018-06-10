@@ -4,12 +4,13 @@
 
 Summary:	A robust Ruby code analyzer, based on the community Ruby style guide
 Name:		rubocop
-Version:	0.18.1
-Release:	3
+# NOTE: check chefstyle -> ohai reqs before updating
+Version:	0.55.0
+Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{name}-%{version}.gem
-# Source0-md5:	a265af5e5e3272e03c854b3c1635770c
+# Source0-md5:	d6c0d5172db7d5c98ff5959b38e4e55a
 Patch0:		rpmpath.patch
 URL:		http://github.com/bbatsov/rubocop
 BuildRequires:	rpm-rubyprov
@@ -27,14 +28,17 @@ BuildRequires:	ruby-simplecov >= 0.7
 BuildRequires:	ruby-yard < 1
 BuildRequires:	ruby-yard >= 0.8
 %endif
-Requires:	ruby-json < 2
-Requires:	ruby-json >= 1.7.7
-Requires:	ruby-parser < 2.2
-Requires:	ruby-parser >= 2.1.3
-Requires:	ruby-powerpack < 0.1
-Requires:	ruby-powerpack >= 0.0.6
+Requires:	ruby-parallel < 2.0
+Requires:	ruby-parallel >= 1.10
+Requires:	ruby-parser >= 2.5
+Requires:	ruby-powerpack < 1
+Requires:	ruby-powerpack >= 0.1
+Requires:	ruby-progressbar < 2
+Requires:	ruby-progressbar >= 1.7
 Requires:	ruby-rainbow < 3.0
-Requires:	ruby-rainbow >= 1.99.1
+Requires:	ruby-rainbow >= 2.2.2
+Requires:	ruby-unicode-display_width < 2
+Requires:	ruby-unicode-display_width >= 1.0.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
