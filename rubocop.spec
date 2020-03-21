@@ -6,7 +6,7 @@ Summary:	A robust Ruby code analyzer, based on the community Ruby style guide
 Name:		rubocop
 # NOTE: check chefstyle -> ohai reqs before updating
 Version:	0.55.0
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{name}-%{version}.gem
