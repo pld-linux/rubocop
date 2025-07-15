@@ -48,7 +48,7 @@ community-driven Ruby Style Guide.
 %prep
 %setup -q
 %{__sed} -i -e '1 s,#!.*ruby,#!%{__ruby},' bin/*
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
